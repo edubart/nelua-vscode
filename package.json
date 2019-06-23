@@ -1,0 +1,35 @@
+{
+    "name": "nelua",
+    "displayName": "nelua",
+    "description": "Nelua programming language syntax",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "markdown.previewScripts": ["./highlightjs-nelua.js"],
+        "languages": [{
+            "id": "nelua",
+            "aliases": ["Nelua", "nelua"],
+            "extensions": [".nelua"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nelua",
+            "scopeName": "source.nelua",
+            "path": "./syntaxes/nelua.tmLanguage.json"
+        }, {
+            "scopeName": "markdown.nelua.codeblock",
+            "path": "./syntaxes/codeblock.json",
+            "injectTo": [
+                "text.html.markdown"
+            ],
+            "embeddedLanguages": {
+                "meta.embedded.block.nelua": "nelua"
+            }
+        }]
+    }
+}
