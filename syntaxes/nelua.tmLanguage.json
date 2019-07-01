@@ -211,7 +211,7 @@
 			"name": "constant.other.placeholder.nelua"
 		},
 		{
-			"match": "\\b(break|do|else|for|if|elseif|goto|return|then|repeat|while|until|end|function|local|in|switch|case|continue|defer|var|const|compconst|auto|enum|record)\\b",
+			"match": "\\b(break|do|else|for|if|elseif|goto|return|then|repeat|while|until|end|function|local|in|switch|case|continue|compconst|const|global|defer|enum|record)\\b",
 			"name": "keyword.control.nelua"
 		},
 		{
