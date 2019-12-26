@@ -97,6 +97,32 @@
 			]
 		},
 		{
+			"begin": "##(\\[(=*)\\[)",
+			"beginCaptures": {
+				"0": {
+					"name": "string.quoted.other.multiline.nelua"
+				},
+				"1": {
+					"name": "punctuation.definition.string.begin.nelua"
+				}
+			},
+			"contentName": "meta.embedded.nelua",
+			"end": "(\\]\\2\\])",
+			"endCaptures": {
+				"0": {
+					"name": "string.quoted.other.multiline.nelua"
+				},
+				"1": {
+					"name": "punctuation.definition.string.end.nelua"
+				}
+			},
+			"patterns": [
+				{
+					"include": "source.nelua"
+				}
+			]
+		},
+		{
 			"begin": "(?<=\\.cdef)\\s*(\\[(=*)\\[)",
 			"beginCaptures": {
 				"0": {
@@ -211,7 +237,7 @@
 			"name": "constant.other.placeholder.nelua"
 		},
 		{
-			"match": "\\b(break|do|else|for|if|elseif|goto|return|then|repeat|while|until|end|function|local|in|switch|case|continue|compconst|const|global|defer|enum|record)\\b",
+			"match": "\\b(break|do|else|for|if|elseif|goto|return|then|repeat|while|until|end|function|local|in|switch|case|continue|global)\\b",
 			"name": "keyword.control.nelua"
 		},
 		{
