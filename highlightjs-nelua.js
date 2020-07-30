@@ -24,7 +24,7 @@ function hljsDefineNelua(hljs) {
           //Lua
           "function and break do else elseif end for goto if in local not or repeat return then until while " +
           //Extended lua
-          "switch case continue global"
+          "switch case continue defer global"
         ,
         built_in:
           //Metatags and globals:
